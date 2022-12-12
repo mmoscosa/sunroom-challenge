@@ -14,4 +14,8 @@ Deploying to Netlify, a public CDN
 
 ### Production
 
+[Production Site - Netlify](https://sunroom-challenge.netlify.app/)
+
 ### Staging
+
+[Staging Site - Netlify](https://staging--sunroom-challenge.netlify.app/)
