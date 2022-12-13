@@ -1,0 +1,9 @@
+.game {
+  height: 200 vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.sunroom-btn {
+  padding: 5px;
+}
