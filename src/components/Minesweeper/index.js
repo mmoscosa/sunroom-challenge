@@ -13,7 +13,7 @@ class Game extends React.Component {
       height: 9,
       width: 9,
       mines: 10,
-      gameStatus: 0,
+      gameStatus: '🙂',
     }
   }
 
@@ -51,9 +51,9 @@ class Game extends React.Component {
       <div className="game">
         <button
           onClick={this.restartGame}
-          class="btn btn-lg btn-block sunroom-btn"
+          className="btn btn-lg btn-block sunroom-btn"
         >
-          Restart 🙂
+          Restart
         </button>
 
         <Board

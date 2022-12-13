@@ -151,7 +151,7 @@ class Board extends React.Component {
   }
 
   killBoard(type) {
-    const message = type === 'lost' ? 'You lost.' : 'You won.'
+    const message = type === 'lost' ? '😵' : '🙌'
 
     this.setState({ gameStatus: message }, () => {
       this.revealBoard()
@@ -233,7 +233,9 @@ class Board extends React.Component {
       <div className="board">
         <div className="mines-count">
           <span>Mines: {this.state.minesCount}</span>
+          <span className="gameStatus">{this.state.gameStatus}</span>
         </div>
+
         <div className="grid">{this.renderBoard()}</div>
       </div>
     )

@@ -21,7 +21,7 @@ class Cell extends React.Component {
   render() {
     const className =
       'cell' +
-      (this.props.value.isRevealed ? '' : ' hidden') +
+      (this.props.value.isRevealed ? ' is-revealed' : ' hidden') +
       (this.props.value.isMine ? ' is-mine' : '') +
       (this.props.value.isClicked ? ' is-clicked' : '') +
       (this.props.value.isEmpty ? ' is-empty' : '') +
