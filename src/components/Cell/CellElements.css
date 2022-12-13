@@ -1,13 +1,22 @@
 .cell {
   display: flex;
-  background-color: rgb(136, 80, 83);
+
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-right-color: #424242;
+  border-bottom-color: #424242;
+  background: silver;
+  color: black;
+  padding: 0 0 4px;
+  border-radius: 1px;
+
   min-width: 30px;
   min-height: 30px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border-radius: 4px;
-  color: #fff;
+
   font-weight: 600;
   transition: background-color 0.2s;
 }
@@ -21,10 +30,8 @@
 }
 
 .cell.hidden {
-  background-color: rgb(91, 66, 69);
 }
 .cell.hidden:hover {
-  background-color: rgb(111, 76, 79);
 }
 
 /* Flagged incorrectly*/
@@ -44,5 +51,10 @@
 
 /* Empty revealed cells*/
 .cell.is-empty:not(.hidden):not(.is-mine):not(.is-flagged) {
-  background-color: rgb(121, 65, 68);
+  /* background-color: rgb(121, 65, 68); */
+  border: 2px inset #fff !important;
+  color: #424242;
+  box-shadow: -1px -1px #000 !important;
+  outline: 0 !important;
+  /* background: url(./images/win95/background.bmp); */
 }
