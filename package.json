@@ -11,7 +11,8 @@
     "react-scripts": "5.0.1",
     "react95": "^4.0.0",
     "styled-components": "^5.3.6",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "prop-types": "15.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
