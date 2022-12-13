@@ -29,19 +29,21 @@
   outline: none;
 }
 
-.cell.hidden {
-}
-.cell.hidden:hover {
-}
-
 /* Flagged incorrectly*/
-.cell.is-flag:not(.is-mine):not(.hidden) {
+.cell.is-flag:not(.is-mine):not(.hidden).ended {
   background-color: rgb(175, 62, 77);
 }
 
 /* Flagged correctly */
 .cell.is-flag.is-mine:not(.hidden) {
   background-color: #4f8755;
+}
+
+.cell.is-revealed {
+  border: 2px inset #fff !important;
+  color: #424242;
+  box-shadow: -1px -1px #000 !important;
+  outline: 0 !important;
 }
 
 /* Clicked on a mine*/
