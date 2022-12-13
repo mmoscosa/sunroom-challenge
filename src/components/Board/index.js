@@ -25,12 +25,16 @@ const Board = () => {
   const blankState = 0
   const revealMines = (clickedRow, clickedCol) => {
     const m = JSON.parse(JSON.stringify(matrix))
+    // if clicked box is empty
     if (m[clickedRow][clickedCol] === blankState) {
+      // find the neighbouring cells containing
       const neighbours = getNeighbours(clickedRow, clickedCol)
       m[clickedRow][clickedCol] = '0'
       setMatrix(m)
-      neighbours.forEach((element) => {})
-    } else {
+      neighbours.forEach((element) => {
+        revealMines(element[0], element[1])
+        setMatrix(m)
+      })
     }
   }
 
