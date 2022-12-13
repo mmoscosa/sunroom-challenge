@@ -633,3 +633,8 @@ TABLES
 .sunroom-header {
   padding-left: 20px;
 }
+
+.card-body.login {
+  min-width: 300px;
+  min-height: 200px;
+}
